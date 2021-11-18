@@ -8,13 +8,13 @@ export default {
     component: MyLabel,
 
     //decorator del componente
-    decorators: [
-        (Story) => (
-            <div style={{ margin: '3em' }}>
-                <Story />
-            </div>
-        ),
-    ],
+    // decorators: [
+    //     (Story) => (
+    //         <div style={{ margin: '3em' }}>
+    //             <Story />
+    //         </div>
+    //     ),
+    // ],
     argTypes: {
         label: { control: 'text' },
         size: { control: 'inline-radio' },
