@@ -26,10 +26,7 @@ export interface MyLabelProps {
     * color personalizado del fondo del boton
     */
     backgroundColor?: string;
-    /**
-    * Este es la cantidad de 10px de Border radius
-    */
-    borderRadius?: string;
+
 
 }
 
@@ -41,12 +38,12 @@ export const MyLabel = ({
     size = 'normal',
     fontColor,
     backgroundColor = 'transparent',
-    borderRadius = '5px'
+
 }: MyLabelProps) => {
     return (
         <span
             className={`label ${size} text-${color}`}
-            style={{ color: fontColor, backgroundColor, borderRadius, padding: '0.25em 0.5em' }}>
+            style={{ color: fontColor, backgroundColor, padding: '0.25em 0.5em' }}>
             {allCaps ? label.toUpperCase() : label}
         </span>
     )
